@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Fill this Form</h1>
+          <p id="description"> You need to make sure that the information you fill in are correct </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">First Name</label>
+            <input type="text" name="firstname" id="name" class="form-control" placeholder="Enter your first name" required/>
+          </div>
+          <div class="form-group">
+            <label id="name-label" for="name">Last Name</label>
+            <input type="text" name="lastname" id="name" class="form-control" placeholder="Enter your family name" required/>
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number" name="age" id="number" max="100" class="form-control" placeholder="Enter your Age"/>
+          </div>
+          <div class="form-group">
+            <p>Choose your gender</p>
+            <select id="dropdown" name="gender" class="form-control" required>
+              <option disabled selected value>Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>When do you wish to study?</p>
+            <label>
+              <input name="study-learn" value="fulltime" type="radio" class="input-radio" checked/>Full Time</label>
+            <label>
+              <input name="study-learn" value="morning" type="radio" class="input-radio" />Morning</label>
+            <label><input name="study-learn" value="evening" type="radio" class="input-radio"/>Evening</label>
+              <label>
+              <input
+                name="study-learn" value="weekends" type="radio" class="input-radio" />Weekends</label>
+          </div>
+            </form>
+      <form id="survey-form">
+          <div class="form-group">
+            <p>How do you wish to learn</p>
+            <select id="most-like" name="time" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="challenges">Video based learning</option>
+              <option value="projects">Face-to-Face</option>
+              <option value="community">Online</option>
+              <option value="openSource">Read Notes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>What programming languages are you familiar with?</p>
+            <label><input name="python" value="language" type="checkbox" class="input-checkbox"/>Python</label>
+            <label><input name="java" value="language" type="checkbox" class="input-checkbox"/>Java</label>
+            <label><input name="JavaScripts" value="language" type="checkbox" class="input-checkbox"/>JavaScripts</label>
+            <label><input name="C#" value="language" type="checkbox" class="input-checkbox"/>C#</label>
+            <label><input name="PHP" value="language" type="checkbox" class="input-checkbox"/>PHP</label>
+          </div>
+          <div class="form-group">
+            <p>Tell us about why you chose our school</p>
+            <textarea id="comments" name="comment" placeholder="Write your ideas..."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
